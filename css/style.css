@@ -117,16 +117,20 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
-  display: inline-flex;
+
   padding-top: 24px;
 }
 .header-logo-dark {
   color: #2e2f42;
 }
-
+.menu-nav {
+  display: flex;
+  align-items: center;
+}
 .nav-list {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 40px;
 }
 .nav-link {
@@ -189,7 +193,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   width: 496px;
-  padding-top: 188px;
+  padding: 188px 0;
   padding-bottom: 48px;
 }
 .hero-btn {
@@ -207,7 +211,8 @@ img {
   background: #4d5ae5;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
-  display: inline-flex;
+  display: block;
+  min-width: 169px;
   padding: 16px 32px;
 
   gap: 10px;
@@ -255,11 +260,17 @@ img {
 }
 .team-list-item {
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .feature-title {
   display: block;
   padding-top: 120px;
   margin-bottom: 72px;
+  text-align: center;
 }
 .subtitle {
   display: flex;
@@ -275,6 +286,7 @@ img {
   display: flex;
   justify-content: center;
   padding-bottom: 32px;
+  text-align: center;
 }
 
 /* Portfolio Section */
@@ -294,23 +306,38 @@ img {
   flex-wrap: wrap;
   align-items: center;
   gap: 24px;
+  row-gap: 48px;
 }
 .portf-list-item {
-  padding-bottom: 48px;
   border-bottom: 1px solid #e7e9fc;
 }
-.portf-img {
+.second-row {
   display: flex;
+  margin-bottom: 0;
+  align-items: center;
+  gap: 24px;
+  row-gap: 48px;
+}
+.first-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  row-gap: 48px;
 }
 .portf-subtitle {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 8px;
+}
+.card-content {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 
 /* Footer */
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 .footer-logo {
   color: #4d5ae5;
@@ -323,7 +350,8 @@ img {
   text-transform: uppercase;
   text-decoration: none;
 
-  display: inline-flex;
+  display: inline-block;
+  margin-bottom: 16px;
   padding-top: 100px;
 }
 .header-logo-light {
