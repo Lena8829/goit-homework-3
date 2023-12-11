@@ -60,8 +60,6 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
-  margin-top: 120px;
-  margin-bottom: 120px;
 }
 /* H 3 */
 .subtitle {
@@ -227,7 +225,7 @@ img {
 .features-list-item {
   width: 264px;
 }
-.title {
+.feature-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -254,7 +252,7 @@ img {
 .team-list-item {
   background-color: #ffffff;
 }
-.title {
+.feature-title {
   display: block;
   padding-top: 120px;
   margin-bottom: 72px;
@@ -276,14 +274,33 @@ img {
 }
 
 /* Portfolio Section */
+
 .portfolio {
   background-color: #fff;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.portf-title {
+  display: block;
+  margin-bottom: 72px;
 }
 .portf-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
 }
 .portf-list-item {
+  padding-bottom: 48px;
 }
 .portf-img {
+  display: flex;
+}
+.portf-subtitle {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 8px;
 }
 
 /* Footer */
