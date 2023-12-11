@@ -60,6 +60,8 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 /* H 3 */
 .subtitle {
@@ -79,6 +81,19 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
 }
 
 /* Header - Section - Top Line */
@@ -204,20 +219,60 @@ img {
 .features {
 }
 .features-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding: 120px 0;
 }
-.feature-list .features-list-item {
+.features-list-item {
+  width: 264px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px 0px 0px;
+}
+.visually-hidden {
+}
+.subtitle {
+  margin-bottom: 8px;
 }
 
 /* Team Section */
-.team {
+.team-section {
   background-color: #f4f4fd;
+
+  align-items: center;
 }
 .team-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 120px;
 }
 .team-list-item {
   background-color: #ffffff;
 }
+.title {
+  display: block;
+  padding-top: 120px;
+  margin-bottom: 72px;
+}
+.subtitle {
+  display: flex;
+  padding-top: 32px;
+  justify-content: center;
+  padding-bottom: 8px;
+}
 .team-card {
+  display: flex;
+  padding-bottom: 32px;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 32px;
 }
 
 /* Portfolio Section */
