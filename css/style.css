@@ -319,7 +319,7 @@ img {
 
 .portf-list-item {
   border-bottom: 1px solid #e7e9fc;
-  width: calc((100% - 48px), 3);
+  width: calc((100% - 48px) / 3);
 }
 .second-row {
   display: flex;
